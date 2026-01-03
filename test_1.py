@@ -1,1 +1,1 @@
-print("gg ez")
+print("hello git")
