@@ -1,5 +1,6 @@
 """
 Bad OCP example.
+
 This payment processor must be modified
 every time a new payment method is added.
 """
