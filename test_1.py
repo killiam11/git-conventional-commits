@@ -1,3 +1,4 @@
+# entry point for the script
 def main():
     print("hello after squash")
     
