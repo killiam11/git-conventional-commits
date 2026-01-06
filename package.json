@@ -4,7 +4,8 @@
   "description": "This repository is used to practice:\r - Git workflow\r - Branching strategies\r - Conventional Commits",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,9 @@
   },
   "homepage": "https://github.com/killiam11/git-conventional-commits#readme",
   "devDependencies": {
+    "@commitlint/cli": "^20.3.0",
+    "@commitlint/config-conventional": "^20.3.0",
+    "husky": "^9.1.7",
     "standard-version": "^9.5.0"
   }
 }
