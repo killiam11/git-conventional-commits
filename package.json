@@ -1,0 +1,24 @@
+{
+  "name": "github",
+  "version": "1.1.0",
+  "description": "This repository is used to practice:\r - Git workflow\r - Branching strategies\r - Conventional Commits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killiam11/git-conventional-commits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/killiam11/git-conventional-commits/issues"
+  },
+  "homepage": "https://github.com/killiam11/git-conventional-commits#readme",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
