@@ -18,6 +18,10 @@ through commits.
 - Git hooks are enforced with **Husky**
 - Invalid commits are blocked automatically
 
+> Tooling configuration lives at the repository root, while Git hooks are
+> isolated inside the `.husky/` directory.
+
+
 ### Semantic Versioning
 - Versions are generated from commits
 - CHANGELOG.md is built automatically
@@ -46,16 +50,27 @@ concepts or workflows.
 
 ```text
 .
-├── solid_practice/
-│   ├── srp/
-│   ├── ocp/
-│   ├── lsp/
-│   ├── isp/
-│   └── dip/
-├── experiments/
 ├── .husky/
-├── CHANGELOG.md
-├── README.md
+│   └── commit-msg          # Git hook enforcing commit message rules
+│
+├── experiments/
+│   ├── README.md           # Explanation of experiments purpose
+│   └── test_1.py           # Isolated tests and learning scripts
+│
+├── solid_practice/
+│   ├── intro/              # Basic design vs refactored examples
+│   ├── srp/                # Single Responsibility Principle
+│   ├── ocp/                # Open/Closed Principle
+│   ├── lsp/                # Liskov Substitution Principle
+│   ├── isp/                # Interface Segregation Principle
+│   └── dip/                # Dependency Inversion Principle
+│
+├── .gitignore
+├── CHANGELOG.md            # Generated from conventional commits
+├── commitlint.config.js    # Commit message validation rules
+├── package.json            # Tooling dependencies and scripts
+├── package-lock.json
+└── README.md               # Project documentation
 `````
 ## Purpose
 
