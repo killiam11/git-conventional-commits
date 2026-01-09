@@ -1,18 +1,19 @@
 # Open/Closed Principle (OCP)
 
-## ❌ Problem
+This example shows how modifying existing code to add new behavior
+leads to fragile and unscalable designs.
 
-The `PaymentProcessor` class violates the Open/Closed Principle.
+## Problem Description
 
-Every time a new payment method is required:
-- The class must be modified
-- Existing logic is at risk of breaking
-- The system becomes harder to maintain
+The `PaymentProcessor` class requires modification
+every time a new payment method is introduced.
 
-## ⚙️ Why this is bad
+## Why This Violates OCP
 
-- High coupling
-- Low extensibility
-- Difficult to test and scale
+- Existing code must be changed to extend functionality
+- The risk of introducing regressions increases
+- The system becomes harder to test and maintain
 
-The class is NOT closed for modification.
+> The Open/Closed Principle states that:
+software entities should be open for extension
+but closed for modification.
