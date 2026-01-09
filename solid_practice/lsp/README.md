@@ -1,5 +1,8 @@
 # Liskov Substitution Principle (LSP)
 
+This example demonstrates a classic violation of the
+Liskov Substitution Principle through incorrect inheritance.
+
 ## Problem Description
 
 The `Square` class inherits from `Rectangle` but breaks
