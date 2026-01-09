@@ -1,12 +1,21 @@
 # Single Responsibility Principle (SRP)
 
-## ❌ Problem
+This example highlights how combining multiple responsibilities
+into a single class leads to tightly coupled and fragile code.
 
-The `UserManager` class has multiple responsibilities:
+## Problem Description
+
+The `UserManager` class is responsible for:
 
 - Creating users
-- Persisting data
-- Sending emails
+- Persisting user data
+- Sending notifications
 
-This violates the Single Responsibility Principle because the class has
-more than one reason to change.
+## Why This Violates SRP
+
+- The class has multiple reasons to change
+- Changes in one concern affect unrelated behavior
+- The code becomes harder to maintain and test
+
+> The Single Responsibility Principle states that:
+a class should have one, and only one, reason to change.
