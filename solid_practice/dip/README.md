@@ -1,13 +1,23 @@
 # Dependency Inversion Principle (DIP)
 
-## Problem
+This example demonstrates a violation of the Dependency Inversion Principle
+and how it can be resolved through proper abstractions.
 
-The `NotificationService` depends directly on `EmailService`.
+## Problem Description
 
-This creates tight coupling and makes the system hard to extend
-or test with different notification channels.
+The high-level `NotificationService` depends directly on a concrete
+implementation such as `EmailService`.
 
-## Violation
+This creates a rigid design where changing the notification channel
+requires modifying the high-level logic.
+
+## Why This Violates DIP
 
 - High-level modules depend on low-level modules
-- No abstraction between services
+- There is no abstraction separating policy from implementation
+- The system becomes hard to test and extend
+
+According to the Dependency Inversion Principle:
+
+- High-level modules should not depend on low-level modules
+- Both should depend on abstractions
